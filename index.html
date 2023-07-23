@@ -1,62 +1,117 @@
-<html>
-    <title>
-        Notifictions Page
-    </title>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
+<!DOCTYPE html>
+<html lang="en">
 
-        </style>
-    </head>
-    <body>
-        <div class="notification">
-        <h1>
-            Notifications "$counter"
-        </h1>
-        <button class="button">Mark all as read</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel=”stylesheet” href=”https://fonts.googleapis.com/icon?family/Material+Icons”>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="top-bar">
+                <div class="toggler">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="flex-container">
-      <img src="avatar-mark-webber.webp">  
-       <p> <b>Mark Weber</b> reacted to your recent post <i>My first tournament today</i><br>1 min ago </p>
+    <div style="margin-left:15%;padding: 1px 16px;height:1000 px;">
+    <div class="quote">
+        <h1><b>Hello there I am <span class="animated">Advait!</span></h1></b>
+        <span class="fade">All our lives we avoid risks to safely land at death's door</span>
+        <br>
+        <h3>A Web developer by day, a writer by night, and a music enjoyer thoroughout, I enjoy learning new things!
+        </h3>
     </div>
-    <br>
-    <div class="flex-container">
-        <img src="avatar-angela-gray.webp">
-        <p> <b>Angela Gray</b> followed you <br>5 min ago</p>
-     </div>
-     <br>
-     <div class="flex-container"> 
-        <img src="avatar-jacob-thompson.webp">
-        <p> <b>Jacob thompson</b> has joined the group <i>Chess Club</i> <br>1 day ago</p>
-     </div>
-     <br>
-     <div class="flex-container">
-        <img src="avatar-rizky-hasanuddin.webp">
-        <p> <b>Rizky Hasanuddin</b> has sent you a private message <br>5 days ago<br><br>
-          
-            <i>Hello, thanks for setting up the Chess Club. <br>I've been a member for a few weeks now and 
-            I'm already having lots of fun and improving my game.</i>
-        </p>
-     </div>
-     <br>
-     <div class="flex-container">
-        <img src="avatar-kimberly-smith.webp">
-        <p> <b>Kimberly Smith </b> commentted on your picture<br>1 week ago</p>
-     </div>
-     <br>
-     <div class="flex-container">
-        <img src="avatar-nathan-peterson.webp">
-        <p> <b>Nathan Peterson</b> reacted to your recent post <i>5 end-game strategies to increase your win rate</i><br>2 weeks ago</p>
-     </div>
-     <br>
-     <div class="flex-container">
-        <img src="avatar-anna-kim.webp">
-        <p> <b>Anna Kim</b> left the group <i>The Chess Club</i><br>2 weeks ago ago</p>
-        <img src="image-chess.webp">
-     </div>
-     <script>
-        document.get
-     </script>
-    </body>
+    <div class="content">
+     <section id="Home">
+        <h2>Home</h2>
+        <p>........</p>
+        <br><br><br><br>
+     </section>
+     <section id="aboutme">
+        <h2>About me</h2>
+        <p>........</p>
+        <br><br><br><br>
+     </section>
+     <section id="Projects">
+        <h2>Projects</h2>
+        
+           <div class="button"> anipianolist    </div>    
+        
+        <p>........</p>
+        <br><br><br><br>
+     </section>
+     <section id="misc">
+        <h2>Miscellaneous</h2>
+        <p>........</p>
+        <br><br><br><br>
+     </section>
+    </div> 
+    <div class="wrap">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="logo.jpg" alt="">
+                <h2><a href="index.html">Home</a></h2>
+                <p><i>with a thousand dreams, this story was wrought</i></p>
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="#Home">
+                        <span class="element">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutme">
+                        <span class="element">About me</span>
+                    </a>
+                </li>
+                <li> <a href="#Projects">
+                        <span class="element">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#misc">
+                        <span class="element">Misc</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+       
+        <script>
+            var toggler = document.querySelector(".toggler");
+            toggler.addEventListener("click", () => {
+                document.querySelector("body").classList.toggle("active");
+            });
+        </script>
+    </div>
+    
+        
+        
+        <div class="play-button">
+            <p>Click here for the full experience</p>
+            <img id="play-button" src="play.jpg" alt="">
+        </div>
+        <audio autoplay class="audio">
+            <source src="House.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        var playButton = document.getElementById("play-button");
+        playButton.addEventListener("click", () => {
+            document.querySelector(".audio").play();
+        });
+    </script>
+    
+</body>
+
 </html>
